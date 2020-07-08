@@ -33,7 +33,7 @@ Copy the HTML block for the alert type you want to update and go to your StreamE
 - Open the assets/css/alerts.css stylesheet.
 - Select all and copy.
 - In the StreamElements CSS editor, select all and delete, then paste the CSS from this repo.
-- Close the CSS Editor and test your new alert.
+- Click "Done" in the CSS Editor and test your new alert.
 - Repeat for all other alert types and variations (eg. re-subs, gift subs, community gifts).
 
 Conclusion
