@@ -7,28 +7,32 @@ body {
   max-width: 1920px;
   height: 1080px;
   max-height: 1080px;
+  background: rgba(0, 0, 0, 0.0);
+  font-family: 'Roboto', sans-serif;
+}
+
+body,
+.alert,
+.alert-type,
+.alert-information {
   margin: 0;
   padding: 0;
   border: 0;
-  background: rgba(0, 0, 0, 0.0);
-  font-family: 'Roboto', sans-serif;
 }
 
 .alert,
 .alert-type,
 .alert-information {
+  position: absolute;
   width: 300px;
   max-width: 300px;
   height: 80px;
   max-height: 80px;
-  margin: 0 auto;
-  padding: 0;
   background: #333333;
 }
 
 .alert {
   display: block;
-  position: absolute;
   top: 500px;
   left: -300px;
   -webkit-animation: slide-in 0.5s forwards, slide-out 0.5s forwards;
@@ -40,7 +44,6 @@ body {
 .alert-type,
 .alert-information {
   display: flex;
-  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
