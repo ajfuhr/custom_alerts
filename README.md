@@ -18,7 +18,7 @@ In the alerts.html file, you will find each alert type in it's own section:
     </div>
     <!-- END FOLLOWER ALERT -->
 
-Ignoring anything between the <!-- and --> tags (these are comments, ignored by the browser when rendering HTML elements), copy the HTML and go to your StreamElements overlay. From here, select the AlertBox widget, or create one if you do not have one present. 
+Copy the HTML block for the alert type you want to update and go to your StreamElements overlay. From here, select the AlertBox widget, or create one if you do not have one present. 
 
 - Under "Position, size, and style", set it to have a 1920px width and a 1080px height.
 - Under "Settings", click the gear icon next to the alert type you'd like to configure. We'll continue with the Follower alert.
