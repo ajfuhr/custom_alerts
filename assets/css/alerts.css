@@ -21,9 +21,7 @@ body {
   max-width: 300px;
   height: 80px;
   max-height: 80px;
-  /* Place the alert so it is vertically centered: 1080px / 2 = 540px - (80px / 2) = 500px */
   top: 500px;
-  /* Start the alert off-screen. This should equal the element's width. */
   left: -300px;
   background: #333333;
 
