@@ -1,0 +1,93 @@
+body {
+  display: block;
+  position: fixed;
+  width: 1920px;
+  max-width: 1920px;
+  height: 1080px;
+  max-height: 1080px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.0);
+  font-family: 'Roboto', sans-serif;
+}
+
+.alert {
+  display: block;
+  position: absolute;
+  width: 300px;
+  max-width: 300px;
+  height: 80px;
+  max-height: 80px;
+  /* Place the alert so it is vertically centered: 1080px / 2 = 540px - (80px / 2) = 500px */
+  top: 500px;
+  /* Start the alert off-screen. This should equal the element's width. */
+  left: -300px;
+  background: #333333;
+
+  -webkit-animation: slide-in 0.5s forwards, slide-out 0.5s forwards;
+  -webkit-animation-delay: 0s, 4.5s;
+  animation: slide-in 0.5s forwards, slide-out 0.5s forwards;
+  animation-delay: 0s, 4.5s;
+}
+
+.alert-type,
+.alert-information {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 80px;
+  margin: 0 auto;
+  padding: 0;
+  color: #ffffff;
+}
+
+.alert-type {
+  font-size: 20pt;
+  font-weight: 500;
+  z-index: 2;
+  opacity: 0;
+
+  -webkit-animation: fade-in 1s forwards, fade-out 1s forwards;
+  -webkit-animation-delay: 0.5s, 2s;
+  animation: fade-in 0.5s forwards, fade-out 0.5s forwards;
+  animation-delay: 0.5s, 1.5s;
+}
+
+.alert-information {
+  font-size: 18pt;
+  font-weight: 200;
+  z-index: 1;
+  opacity: 0;
+
+  -webkit-animation: fade-in 1s forwards, fade-out 1s forwards;
+  -webkit-animation-delay: 2s, 4s;
+  animation: fade-in 0.5s forwards, fade-out 0.5s forwards;
+  animation-delay: 2s, 4s;
+}
+
+@keyframes slide-in {
+  0% { left: -300px; }
+  100% { left: 0; }
+}
+
+@keyframes slide-out {
+  0% { left: 0; }
+  100% { left: -300px; }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes fade-out {
+  0% { opacity: 1.0; }
+  100% { opacity: 0.0; }
+}
